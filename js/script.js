@@ -1,15 +1,4 @@
 jQuery(document).ready(function ($) {
-
-  const r = new rive.Rive({
-    src: "../img/chefAffa.riv",
-    canvas: document.getElementById("canvas"),
-    autoplay: true,
-    onLoad: () => {
-      // Ensure the drawing surface matches the canvas size and device pixel ratio
-      r.resizeDrawingSurfaceToCanvas();
-    },
-  });
-
   // Smooth scroll to anchor
   $('a[href^="#"]').on('click', function (event) {
     event.preventDefault();

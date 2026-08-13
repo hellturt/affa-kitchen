@@ -217,6 +217,16 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      const r = new rive.Rive({
+        src: "../img/chefAffa.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        onLoad: () => {
+          // Ensure the drawing surface matches the canvas size and device pixel ratio
+          r.resizeDrawingSurfaceToCanvas();
+        },
+      });
+
       document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
       // Scroll reveal
