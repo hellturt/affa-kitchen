@@ -1,0 +1,177 @@
+@use 'variables' as *;
+
+
+// --------------------------------------------------
+// Footer
+// --------------------------------------------------
+
+footer {
+  color: $color-white;
+  background: $color-dark-red;
+  height: 50px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: $color-white;
+  }
+
+  a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    height: auto;
+
+    .container {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+
+// --------------------------------------------------
+// Container
+// --------------------------------------------------
+
+.container {
+  width: $container-width;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-large) {
+    width: $container-width-large;
+  }
+
+  @media (max-width: $breakpoint-container) {
+    width: $container-width-medium;
+  }
+
+  @media (max-width: $breakpoint-container-medium) {
+    width: 90%;
+  }
+}
+
+
+// --------------------------------------------------
+// CTA button
+// --------------------------------------------------
+
+.cta-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px 30px;
+  // color: $color-white;
+  color: $color-dark-red;
+  font-size: 20px;
+  font-family: $font-heading;
+  border-radius: 50px;
+  // border: 4px solid $color-dark-red;
+  background: $color-header;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover,
+  &:visited {
+    color: $color-white;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $breakpoint-extra-small) {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+
+// --------------------------------------------------
+// Modal
+// --------------------------------------------------
+
+body.pause {
+  overflow: hidden;
+}
+
+.modal-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+
+  &.active {
+    display: flex;
+  }
+
+  .modal-content-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 650px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $color-white;
+    position: relative;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-container {
+      width: 40%;
+    }
+
+    .title {
+      width: 50%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: -20px;
+    top: -20px;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    border-radius: 50px;
+    font-size: 28px;
+    color: $color-white;
+    background-color: $color-header;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+}

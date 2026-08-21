@@ -10,7 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <title>Affa Kitchen</title>
+  <title>Affa Kitchen | Homemade Cakes & Desserts in Dungun</title>
+  <meta name="description"
+    content="Affa Kitchen is a home-based bakery in Kuala Dungun offering freshly made cakes, cupcakes and desserts for birthdays, celebrations and special occasions.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://affakitchen.com/">
+  <meta property="og:title" content="Affa Kitchen | Homemade Cakes & Desserts in Dungun">
+  <meta property="og:description"
+    content="Freshly made cakes, cupcakes and desserts for birthdays, celebrations and special occasions.">
+  <meta property="og:url" content="https://affakitchen.com/">
+  <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -43,6 +52,9 @@
           <h3>Welcome to</h3>
           <h1>Affa Kitchen</h1>
           <h2>Cakes . Cookies . Deserts . etc ...</h2>
+          <p>
+            Freshly baked cakes, desserts and treats made with love for birthdays, celebrations and everyday cravings.
+          </p>
           <a href="#delicacies" class="cta-btn">Check Out Our Delicacies</a>
         </div>
         <canvas id="canvas" width="500" height="500"></canvas>
@@ -113,6 +125,47 @@
         </div>
 
       </div>
+    </section>
+
+    <section class="section-order">
+      <div class="container">
+        <h1>How To Order</h1>
+        <p>Planning a special treat? Just send us your order details and we'll take care of the rest.</p>
+
+        <div class="order-container">
+          <div class="single-order">
+            <div class="img-container">
+              <img src="./img/order1.png" alt="">
+              <img src="./img/eclipse.png" class="eclipse" alt="">
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+              Reach out to us via WhatsApp to discuss your order and preferences.
+            </p>
+          </div>
+
+          <div class="single-order">
+            <div class="img-container">
+              <img src="./img/order2.png" alt="">
+              <img src="./img/eclipse.png" class="eclipse" alt="">
+            </div>
+            <h2>Place Your Order</h2>
+            <p>
+              Provide details about your desired cake, including size, flavor, and any special requests.
+            </p>
+          </div>
+
+          <div class="single-order">
+            <div class="img-container">
+              <img src="./img/order3.png" alt="">
+              <img src="./img/eclipse.png" class="eclipse" alt="">
+            </div>
+            <h2>Enjoy Your Treats</h2>
+            <p>
+              Pick up your order or have it delivered, and savor the delicious creations from Affa Kitchen.
+            </p>
+          </div>
+        </div>
     </section>
 
     <section class=" section3">
@@ -265,7 +318,8 @@
       ScrollReveal().reveal('.section1 h1', { ...slideDown, delay: 600 })
       ScrollReveal().reveal('.section1 h3', { ...slideUp, delay: 900 })
       ScrollReveal().reveal('.section1 h2', { ...slideUp, delay: 1200 })
-      ScrollReveal().reveal('.section1 a', { ...slideDown, delay: 1200 })
+      ScrollReveal().reveal('.section1 p', { ...slideDown, delay: 1500 })
+      ScrollReveal().reveal('.section1 a', { ...slideDown, delay: 1700 })
 
       ScrollReveal().reveal('.section2 h2', slideDown)
       ScrollReveal().reveal('.section2 p', slideDown)
@@ -275,6 +329,12 @@
       ScrollReveal().reveal('.section2 .product-container .single-product:nth-child(4)', slideDown)
       ScrollReveal().reveal('.section2 .product-container .single-product:nth-child(5)', { ...slideDown, delay: 300 })
       ScrollReveal().reveal('.section2 .product-container .single-product:nth-child(6)', { ...slideDown, delay: 600 })
+
+      ScrollReveal().reveal('.section-order h1', slideDown)
+      ScrollReveal().reveal('.section-order p', slideDown)
+      ScrollReveal().reveal('.section-order .order-container .single-order:nth-child(1)', slideRight)
+      ScrollReveal().reveal('.section-order .order-container .single-order:nth-child(2)', { ...slideRight, delay: 300 })
+      ScrollReveal().reveal('.section-order .order-container .single-order:nth-child(3)', { ...slideRight, delay: 600 })
 
       ScrollReveal().reveal('.section3', slideDown)
 

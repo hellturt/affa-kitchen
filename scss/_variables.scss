@@ -1,0 +1,75 @@
+// --------------------------------------------------
+// Colors
+// --------------------------------------------------
+
+$color-header: #e86d87;
+$color-dark-red: #851a1a;
+$color-background: #ffeeee;
+
+$color-text: #404040;
+$color-text-light: #666;
+$color-text-dark: #111;
+
+$color-link: #4169e1;
+$color-link-visited: #800080;
+$color-link-hover: #191970;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-border: #ccc;
+$color-border-dark: #bbb;
+
+$color-code-background: #eee;
+$color-mark-background: #fff9c0;
+
+
+// --------------------------------------------------
+// Fonts
+// --------------------------------------------------
+
+$font-heading: 'Sigmar One', sans-serif;
+$font-body: 'ABeeZee', sans-serif;
+
+$font-system: -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Oxygen-Sans,
+  Ubuntu,
+  Cantarell,
+  "Helvetica Neue",
+  sans-serif;
+
+$font-monospace: "Courier 10 Pitch", courier, monospace;
+$font-code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+
+// --------------------------------------------------
+// Breakpoints
+// --------------------------------------------------
+
+$breakpoint-large: 1300px;
+$breakpoint-container: 1280px;
+$breakpoint-container-medium: 1080px;
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 600px;
+$breakpoint-small: 530px;
+$breakpoint-extra-small: 400px;
+
+
+// --------------------------------------------------
+// Layout
+// --------------------------------------------------
+
+$container-width: 1280px;
+$container-width-large: 1080px;
+$container-width-medium: 980px;
+
+
+// --------------------------------------------------
+// Misc
+// --------------------------------------------------
+
+$transition-fast: 0.25s;
