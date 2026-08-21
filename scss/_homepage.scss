@@ -323,6 +323,14 @@ button {
         z-index: -1;
       }
 
+      .arrow {
+        position: absolute;
+        bottom: 50%;
+        left: calc(100% + 20px);
+        width: 80px;
+        height: auto;
+      }
+
       // .single-order:nth-child(2) {
       //   .img-container .eclipse {
       //     left: 15%;

@@ -1067,6 +1067,13 @@ button {
   opacity: 0.75;
   z-index: -1;
 }
+.site-main section.section-order .order-container .arrow {
+  position: absolute;
+  bottom: 50%;
+  left: calc(100% + 20px);
+  width: 80px;
+  height: auto;
+}
 .site-main section.section-order .order-container p {
   font-size: 20px;
   color: #fff;
