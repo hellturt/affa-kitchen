@@ -348,6 +348,15 @@ button {
       }
     }
 
+    @media (max-width: 1280px) {
+      .order-container {
+        .arrow {
+          // left: calc(100% + 20px);
+          width: 50px;
+        }
+      }
+    }
+
     @media (max-width: $breakpoint-tablet) {
       margin-bottom: 60px;
 
@@ -356,11 +365,31 @@ button {
       }
 
       .order-container {
+        margin-top: 100px;
         flex-direction: column;
         gap: 40px;
 
+        .img-container {
+          width: max-content;
+        }
+
+        .arrow {
+          left: calc(50% - 20px);
+          bottom: -50px;
+          transform: rotate(90deg);
+          width: 50px;
+        }
+
         .single-order {
           width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 530px) {
+      .order-container {
+        .img-container {
+          width: 70%;
         }
       }
     }
